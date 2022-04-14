@@ -9,6 +9,9 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 
 Find an Overview in this [PDF](https://github.com/gregorriegler/monolithic-petclinic/blob/master/Monolithic%20Pet%20Clinic.pdf)
 
+# Team members
+* Harald Reingruber
+
 ## Working with the Monolithic Petclinic
 
 The following items should be installed in your system:
