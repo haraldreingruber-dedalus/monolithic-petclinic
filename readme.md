@@ -11,6 +11,7 @@ Find an Overview in this [PDF](https://github.com/gregorriegler/monolithic-petcl
 
 # Team members
 * Harald Reingruber
+* Johannes Dünser
 
 ## Working with the Monolithic Petclinic
 
