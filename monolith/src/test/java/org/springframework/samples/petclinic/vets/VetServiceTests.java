@@ -35,7 +35,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class VetServiceTests {
 
     @Autowired
-    VetService service;
+    IVetService service;
 
     @Test
     void shouldFindVets() {
