@@ -1,6 +1,7 @@
 package org.springframework.samples.petclinic.vets;
 
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,9 @@ public class VetService {
         this.vets = vets;
     }
 
-    public Collection<Vet> allVets() {
-        return this.vets.findAll();
+    public Collection<VetDTO> allVets() {
+        return this.vets.findAll().stream()
+        		.map( vet -> new VetDTO( vet ) )
+        		.collect(Collectors.toList() );
     }
 }
