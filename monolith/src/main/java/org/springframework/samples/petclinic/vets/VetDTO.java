@@ -40,6 +40,8 @@ public class VetDTO implements Serializable
     private String firstName;
 
     private String lastName;
+
+    public VetDTO(){}
     
     public VetDTO( Vet vet )
     {

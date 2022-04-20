@@ -29,7 +29,9 @@ class SpecialtyDTO implements Serializable
 {
     @Column(name = "name")
     private String name;    
-    
+
+    public SpecialtyDTO(){}
+
     public SpecialtyDTO( Specialty speciality )
     {
     	this.name = speciality.getName();
