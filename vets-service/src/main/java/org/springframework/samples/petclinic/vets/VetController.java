@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author Ken Krebs
  * @author Arjen Poutsma
  */
-@Controller
+@RestController
 class VetController {
 
     private final VetService service;
@@ -36,9 +36,8 @@ class VetController {
     }
 
     @GetMapping("/vets")
-    public String showVetList(Map<String, Object> model) {
-        model.put("vets", this.service.allVets());
-        return "vets/vetList";
+    public Collection<VetDto> showVetList() {
+        return this.service.allVets();
     }
 
 }
