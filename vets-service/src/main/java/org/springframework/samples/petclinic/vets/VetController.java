@@ -15,10 +15,10 @@
  */
 package org.springframework.samples.petclinic.vets;
 
-import java.util.Map;
+import java.util.Collection;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Juergen Hoeller
@@ -36,7 +36,7 @@ class VetController {
     }
 
     @GetMapping("/vets")
-    public Collection<VetDto> showVetList() {
+    public Collection<VetDTO> showVetList() {
         return this.service.allVets();
     }
 
